@@ -1,0 +1,4 @@
+Presentacion Manuel Fino 
+
+Durante el primer sprint, tengo asignado el rol de analista, en el cual debo levantar los
+requerimientos necesarios de la empresa/negocio para proyectarlos en el software a presentar. 
