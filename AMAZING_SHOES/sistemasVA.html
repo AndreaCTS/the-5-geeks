@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Venta</title>
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+
+<body background="greenP.jpg">
+    <div id="formulario">
+
+        <form action="action_page.php" method="post">
+
+            <div class="container">
+
+                <table>
+
+                    <tr>
+                        <div class="imgcontainer">
+                            <img src="logo_tienda.png" alt="Avatar" class="avatar">
+                        </div>
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <label for="idCliente"><b>ID Cliente</b></label>
+                        </td>
+                        <td colspan="2">
+                            <input type="text" placeholder="Documento del cliente" id="idCliente" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <label for="idVenta"><b>Identificador de venta</b></label>
+                        </td>
+                        <td colspan="2">
+                            <input type="text" placeholder="Identificador de venta" id="idVenta" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <label for="nProducto"><b>Producto</b></label>
+                        </td>
+                        <td colspan="2">
+                            <input type="text" placeholder="Nombre del producto" id="nProducto" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <label for="dProducto"><b>Descripción del Producto</b></label>
+                        </td>
+                        <td>
+                            <input type="text" placeholder="Descripción del producto" id="dProducto">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td >
+                            <button type="button" class="btn" onclick="window.alert('Venta registrada con exito')" >Registrar Venta</button>
+                        </td>
+                        <td >
+                            <button type="button" onclick="location.href='gestionV.html';"  class ="btn" >Gestión Ventas</button>
+                        </td>
+
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+
+</html>
