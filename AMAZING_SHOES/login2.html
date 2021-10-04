@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="estilo_login.css">
+</head>
+
+<body background="fondo.jpg">
+
+    <div id="formulario">
+        <form action="action_page.php" method="post">
+
+            <div class="imgcontainer">
+                <img src="logo_tienda.png" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+                <label for=""><b>ROL</b></label><br>
+                <input type="checkbox" id="vendedor" name="vendedor" value="Vendedor">
+                <label for="vehicle1"> Vendedor</label><br>
+                <input type="checkbox" id="administrador" name="administrador" value="Administrador">
+                <label for="vehicle2"> Administrador</label><br>
+
+
+                <label for="uname"><b>Usuario</b></label>
+                <input type="text" placeholder="Ingresa el usuario" id="uname" required>
+
+                <label for="psw"><b>Contraseña</b></label>
+                <input type="password" placeholder="Ingresa la Contraseña" id="psw" required>
+
+                <button type="button" id="logearse" onclick="verificar()">Loguearse</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Rocordarme
+                </label>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" class="btn" onclick="location.href='login.html';">Regresar</button>
+                <span class="psw"> <a href="#">Olvidaste la Contraseña?</a></span>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+<script>
+    function verificar() {
+
+        var check1 = document.getElementById("vendedor");
+        var check2 = document.getElementById("administrador");
+
+        if((check1.checked )&&(!check2.checked)){
+            window.location.assign("sistemasVA.html");
+        }
+        else if  (( check2.checked)&&(!check1.checked)){
+            window.location.assign("sistemasVA.html");
+        }else{
+            window.alert("Selecciona solo un rol");
+        }
+
+        /*
+        var pwd = document.getElementById("psw");
+        var contraseña = "the5G";
+
+        if (pwd.value == contraseña) {
+            window.location.assign("sistemasVA.html");
+        } else {
+            window.alert("no coinciden las contraseñas")
+        }
+        */
+    }
+</script>
+
+</html>

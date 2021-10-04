@@ -3,6 +3,7 @@
 
     background-repeat: no-repeat;
     background-size: 100%;
+    background-color: black;
  }
 
  form {
@@ -76,6 +77,12 @@ span.psw {
     float: right;
     padding-top: 16px;
 }
+
+.oc{
+    float: right;
+
+}
+
 header{
     background-color:black;
 }
@@ -99,6 +106,16 @@ li{
 li a{
     color: chartreuse;
     font-size:x-large;
+}
+footer{
+    
+}
+
+.piedepagina{
+    background-color: black;
+    color: chartreuse;
+    height: 60px;
+    text-align: right;
 }
 
 
