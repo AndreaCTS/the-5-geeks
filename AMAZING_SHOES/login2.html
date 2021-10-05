@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="shortcut icon" href="logo_tienda.png" type="image/x-icon" />
     <link rel="stylesheet" href="estilo_login.css">
 </head>
 
@@ -19,7 +20,7 @@
             </div>
 
             <div class="container">
-                <label for=""><b>ROL</b></label><br>
+                <label for=""><b>Rol</b></label><br>
                 <input type="checkbox" id="vendedor" name="vendedor" value="Vendedor">
                 <label for="vehicle1"> Vendedor</label><br>
                 <input type="checkbox" id="administrador" name="administrador" value="Administrador">
@@ -54,10 +55,10 @@
         var check2 = document.getElementById("administrador");
 
         if((check1.checked )&&(!check2.checked)){
-            window.location.assign("sistemasVA.html");
+            window.location.assign("vendedor.html");
         }
         else if  (( check2.checked)&&(!check1.checked)){
-            window.location.assign("sistemasVA.html");
+            window.location.assign("administrador.html");
         }else{
             window.alert("Selecciona solo un rol");
         }
