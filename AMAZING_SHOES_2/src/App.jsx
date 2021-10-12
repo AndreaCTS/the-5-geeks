@@ -1,12 +1,13 @@
-import logo from './logo.svg';
+import logo from './media/logo_trans2.png';
 import './App.css';
-
+import fondo from "./media/fondo.jpg";
 function App() {
   return (
-    <div className="App" background="fondo.jpg">
+    <div className="App" >
+
       <header>
-        <img src="logo_trans2.png" alt="Logotipo" class="logo_nav" />
-        <nav class="container">
+        <img src={logo} alt="Logotipo" className="logo_nav" />
+        <nav className="container">
           <ul>
             <li><a href="login.html">Logearse</a></li>
             <li><a href="#">Sobre Nosotros</a></li>
@@ -14,11 +15,13 @@ function App() {
           </ul>
         </nav>
       </header>
-
-
-      <footer class="piedepagina">
+      <div>
+        <img src={fondo} alt="fondo pagina" className="imgfondo" />
+      </div>
+      <footer className="piedepagina">
         <div>Todos los derechos reservados | Misión-Tic 2022 | THE-FIVE-GEEKS</div>
       </footer>
+
     </div>
   );
 }
