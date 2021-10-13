@@ -1,7 +1,8 @@
 import "./App.css";
 import Index from "./pages/Index";
-
-
+import Login from "./pages/Login";
+import Registro from "./pages/Registro";
+import Administrador from "./pages/Administrador";
 import React from "react";
 import ReactDOM from "react-dom";
 import {
@@ -10,9 +11,6 @@ import {
   Route,
   useParams
 } from "react-router-dom";
-import Login from "./pages/Login";
-
-
 
 
 function App() {
@@ -20,12 +18,23 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route path="/index">
-            <Index/>
-          </Route>
+          
           <Route path="/login">
             <Login/>
           </Route>
+
+          <Route path="/registro">
+            <Registro/>
+          </Route>
+
+          <Route path="/administrador">
+            <Administrador/>
+          </Route>
+
+          <Route path="/">
+            <Index/>
+          </Route>
+          
         </Switch>
       </Router>
     </div>

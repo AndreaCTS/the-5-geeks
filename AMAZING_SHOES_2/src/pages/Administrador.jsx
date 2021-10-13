@@ -5,7 +5,7 @@ import Logging from "../components/Logging.jsx";
 import logo2 from "../media/logo_tienda.png";
 import { Link } from 'react-router-dom';
 
-function Index() {
+function Administrador() {
   return (
     <div>
       <header>
@@ -13,7 +13,7 @@ function Index() {
         <nav className="container">
           <ul>
             <li>
-              <Link to="login">Ingresar</Link>
+              <Link to="/">Salir</Link>
             </li>
             <li>
               <Link to="#">Sobre Nosotros</Link>
@@ -48,4 +48,4 @@ function Prueba() {
   );
 }
 
-export default Index;
+export default Administrador;
