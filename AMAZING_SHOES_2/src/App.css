@@ -1,6 +1,7 @@
 /* Bordered form */
 *{
   font-family:Arial, Helvetica, sans-serif;
+  background-color: black;
 }
 .imgfondo {
 display: block;
@@ -9,6 +10,11 @@ width:  100%;
 background-color: rgb(0, 0, 0);
 top: 0px;
 }
+
+h1{
+  color: white;
+}
+
 
 form {
 background-color: rgba(131, 255, 131, 0.5);
@@ -73,6 +79,7 @@ border-radius: 100%;
 .container {
 align-items: center;
 padding: 16px;
+background-color: black;
 }
 
 /* The "Forgot password" text */
@@ -129,7 +136,6 @@ color: chartreuse;
 height: 50px;
 line-height: 50px;
 text-align: center;
-position: relative;
 bottom: 0;
 left: 0;
 width: 100%;
