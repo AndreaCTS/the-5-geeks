@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginAdmin</title>
+    <link rel="shortcut icon" href="logo_tienda.png" type="image/x-icon" />
+    <link rel="stylesheet" href="estilo_login.css">
+</head>
+
+<body background="fondo.jpg" class="back">
+
+    <div id="formulario">
+        <form action="action_page.php" method="post">
+
+            <div class="imgcontainer">
+                <img src="logo_tienda.png" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+                <label for="uname"><b>Nuevo Usuario</b></label>
+                <input type="text" placeholder="Ingresa el nuevo usuario" name="uname" required>
+
+                <label for="email"><b>Correo Electónico</b></label>
+                <input type="text" placeholder="Ingresa tu correo electrónico" name="uname" required>
+
+                <label for="psw"><b>Contraseña</b></label>
+                <input type="password" placeholder="Ingresa la Contraseña" name="psw" required>
+
+                <label ><b>Selecciona tu Rol</b></label><br>
+                <input class="oc" type="checkbox" id="vendedor" name="vendedor" value="Vendedor">
+                <label  class="oc" > Vendedor</label><br>
+                <input class="oc" type="checkbox" id="administrador" name="administrador" value="Administrador">
+                <label class="oc" > Administrador</label><br>
+
+                <button type="submit" id="logearse" onclick="location.href='login.html'">Registrarse</button>
+             
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" class="cancelbtn" onclick="location.href='index.html'">Cancelar</button>
+            </div>
+        
+
+        </form>
+    </div>
+
+</body>
+
+</html>
