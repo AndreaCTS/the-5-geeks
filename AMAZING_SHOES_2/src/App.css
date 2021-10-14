@@ -2,7 +2,14 @@
 *{
   font-family:Arial, Helvetica, sans-serif;
 }
-
+section{
+  position: absolute;
+  border: 1px solid rgb(18, 122, 0);
+  background-color: rgba(95, 253, 74, 0.5);
+  right: 30px;
+  padding:15px; 
+  top: 120px;
+}
 
 #formulario{
   position: relative;
@@ -31,7 +38,7 @@ top: 0px;
 }
 
 h1{
-  color: white;
+  color: black;
 }
 
 
@@ -108,6 +115,12 @@ float: right;
 padding-top: 16px;
 }
 
+.boton_derecho{
+  float: right;
+  width: auto;
+  padding: 10px 18px;
+}
+
 .oc {
 float: right;
 margin-left: 10px;
@@ -168,6 +181,7 @@ position: absolute;
 left: 0;
 top: 120px;
 background-color: rgba(0, 0, 0, 0.8);
+max-width: 40%;
 }
 
 .lateral ul{

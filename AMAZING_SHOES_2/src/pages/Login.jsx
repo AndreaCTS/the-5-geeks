@@ -36,7 +36,7 @@ function Login() {
 
                     <div className="container" className="abajo" >
                         <Link to="/"><button type="button" class="cancelbtn">Regresar</button></Link>
-                        <span class="psw"> <Link to="registro">Registrarse</Link></span>
+                        <span className="psw"> <Link to="registro">Registrarse</Link></span>
                     </div>
 
                 </form>

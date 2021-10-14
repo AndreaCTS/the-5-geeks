@@ -3,6 +3,8 @@ import Index from "./pages/Index";
 import Login from "./pages/Login";
 import Registro from "./pages/Registro";
 import Administrador from "./pages/Administrador";
+import Productos from "./pages/Productos";
+import BuscarPro from "./pages/BuscarPro";
 import React from "react";
 import ReactDOM from "react-dom";
 import {
@@ -29,6 +31,14 @@ function App() {
 
           <Route path="/administrador">
             <Administrador/>
+          </Route>
+
+          <Route path="/productos">
+            <Productos/>
+          </Route>
+
+          <Route path="/buscarpro">
+            <BuscarPro/>
           </Route>
 
           <Route path="/">
