@@ -1,0 +1,168 @@
+<body>
+
+<div className="awesome" >
+  <label htmlFor="name">Enter your name: </label>
+  <input type="text" id="name" />
+</div>
+<p>
+  <meta charSet="UTF-8" />
+  <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Productos</title>
+  <link rel="stylesheet" href="../src/estiloP.css" />
+</p>
+<div className="container">
+  <h1 style= "color: darkgreen" >
+    Catalogo de Productos
+  </h1>
+  <table width="100%">
+    <tbody>
+      <tr>
+        <td colSpan={5}>
+          <label htmlFor="uname">
+            <b>Producto</b>
+          </label>
+          <input
+            type="text"
+            placeholder="Nombre del producto"
+            name="uname"
+            required
+          />
+        </td>
+      </tr>
+      <tr>
+        <td colSpan={5}>
+          <label htmlFor="uname">
+            <b>Precio en pesos</b>
+          </label>
+          <input
+            type="number"
+            placeholder="Precio del producto"
+            name="uname"
+            required
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button
+            type="button"
+            className="btn"
+            title="Crear tabla para productos"
+          >
+            Crear Tabla
+          </button>
+        </td>
+        <td>
+          <button type="button" className="btn">
+            Agregar Producto
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <br />
+  <h2 style="color: darkgreen" }}>
+    Lista de Productos
+  </h2>
+  <table
+    width="100%"
+    style="background: rgb (255, 255, 255)" }}
+  >
+    <tbody>
+      <tr className="ta">
+        <td className="ti">
+          <label htmlFor="uname">
+            <b>Código</b>
+          </label>
+        </td>
+        <td className="ti">
+          <label htmlFor="uname">
+            <b>Producto</b>
+          </label>
+        </td>
+        <td className="ti">
+          <label htmlFor="psw">
+            <b>Precio</b>
+          </label>
+        </td>
+        <td className="ti">
+          <label htmlFor="uname">
+          </b>
+          </label>
+        </td>
+        <td className="ti">
+          <label htmlFor="uname">
+          </b>
+          </label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label htmlFor="uname">A123</label>
+        </td>
+        <td>
+          <label htmlFor="uname">Arroz</label>
+        </td>
+        <td>
+          <label htmlFor="psw">15000</label>
+        </td>
+        <td>
+          <button type="button" title="Editar">
+            <img src="pencil.png" width="30px" height="30px" />
+          </button>
+        </td>
+        <td>
+          <button type="button" title="Eliminar">
+            <img src="trash.png" width="30px" height="30px" />
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label htmlFor="uname">A752</label>
+        </td>
+        <td>
+          <label htmlFor="uname">Panela</label>
+        </td>
+        <td>
+          <label htmlFor="psw">1800</label>
+        </td>
+        <td>
+          <button type="button" title="Editar">
+            <img src="pencil.png" width="30px" height="30px" />
+          </button>
+        </td>
+        <td>
+          <button type="button" title="Eliminar">
+            <img src="trash.png" width="30px" height="30px" />
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label htmlFor="uname">B901</label>
+        </td>
+        <td>
+          <label htmlFor="uname">Aceite de Oliva</label>
+        </td>
+        <td>
+          <label htmlFor="psw">25000</label>
+        </td>
+        <td>
+          <button type="button" title="Editar">
+            <img src="pencil.png" width="30px" height="30px" />
+          </button>
+        </td>
+        <td>
+          <button type="button" title="Eliminar">
+            <img src="trash.png" width="30px" height="30px" />
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</p>
+
