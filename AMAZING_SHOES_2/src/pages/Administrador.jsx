@@ -13,60 +13,67 @@ function Administrador() {
         <nav className="container">
           <ul>
             <li>
-              <Link to="/">Salir</Link>
+              <Link to="login">Contacto</Link>
+
             </li>
             <li>
               <Link to="#">Sobre Nosotros</Link>
             </li>
             <li>
-              <Link to="login">Contacto</Link>
+              <Link to="/">Salir</Link>
             </li>
           </ul>
         </nav>
       </header>
 
       <main>
-        <div>
+
+        <div className="contenedor_contenido">
+          <div class="lateral">
+            <h2>Menú Administrador</h2>
+            <ul>
+              <li>
+                <a href="#">REGISTRAR VENTA</a>
+              </li>
+              <li>
+                <a href="#">LISTAR VENTAS</a>
+              </li>
+              <li>
+                <a href="#">BUSCAR VENTA</a>
+              </li>
+              <li>
+                <a href="#">ACTUALIZAR VENTA</a>
+              </li>
+              <li>
+                <Link to="/productos">AGREGAR PRODUCTO</Link>
+              </li>
+              <li>
+                <a href="#">LISTAR PRODUCTO</a>
+              </li>
+              <li>
+                <Link to="/buscarpro">BUSCAR PRODUCTO</Link>
+              </li>
+              <li>
+                <a href="#">EDITAR PRODUCTO</a>
+              </li>
+              <li>
+                <a href="#">VER USUARIOS</a>
+              </li>
+              <li>
+                <a href="#">EDITAR USUARIOS</a>
+              </li>
+            </ul>
+          </div>
+
+          <div className="section">
+            <div >Area para tablas</div>
+          </div>
+        </div>
+
+        {/* <div>
           <img src={fondo} alt="fondo pagina" className="imgfondo" />
-        </div>
-        <div class="lateral">
-          <h2>Menú Administrador</h2>
-          <ul>
-            <li>
-              <a href="#">REGISTRAR VENTA</a>
-            </li>
-            <li>
-              <a href="#">LISTAR VENTAS</a>
-            </li>
-            <li>
-              <a href="#">BUSCAR VENTA</a>
-            </li>
-            <li>
-              <a href="#">ACTUALIZAR VENTA</a>
-            </li>
-            <li>
-              <Link to="/productos">AGREGAR PRODUCTO</Link>
-            </li>
-            <li>
-              <a href="#">LISTAR PRODUCTO</a>
-            </li>
-            <li>
-              <Link to="/buscarpro">BUSCAR PRODUCTO</Link>
-            </li>
-            <li>
-              <a href="#">EDITAR PRODUCTO</a>
-            </li>
-            <li>
-              <a href="#">VER USUARIOS</a>
-            </li>
-            <li>
-              <a href="#">EDITAR USUARIOS</a>
-            </li>
-          </ul>
-        </div>
-        <section>
-          <div >Area para tablas</div>
-        </section>
+        </div> */}
+
       </main>
 
       <footer className="piedepagina">

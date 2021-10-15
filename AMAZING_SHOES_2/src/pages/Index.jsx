@@ -13,23 +13,23 @@ function Index() {
         <nav className="container">
           <ul>
             <li>
-              <Link to="login">Ingresar</Link>
+            <Link to="login">Contacto</Link>
             </li>
             <li>
               <Link to="#">Sobre Nosotros</Link>
             </li>
             <li>
-              <Link to="login">Contacto</Link>
+              <Link to="login">Ingresar</Link>
             </li>
           </ul>
         </nav>
       </header>
 
-      <main>
+      
         <div>
           <img src={fondo} alt="fondo pagina" className="imgfondo" />
         </div>
-      </main>
+      
 
       <footer className="piedepagina">
         <div>
