@@ -27,9 +27,9 @@ function Registro() {
                         <input type="password" placeholder="Ingresa la Contraseña" name="psw" required />
 
                         <label ><b>Selecciona tu Rol</b></label>
-                        <input class="oc" type="checkbox" id="vendedor" name="vendedor" value="Vendedor" />
+                        <input class="oc" type="radio" id="vendedor" name="mi_rol" value="Vendedor" />
                         <label class="oc" > Vendedor</label>
-                        <input class="oc" type="checkbox" id="administrador" name="administrador" value="Administrador" />
+                        <input class="oc" type="radio" id="administrador" name="mi_rol" value="Administrador" />
                         <label class="oc" > Administrador</label>
 
                         <button type="submit" id="logearse">Registrarse</button>
