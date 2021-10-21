@@ -1,19 +1,48 @@
 import "../App.css";
 import fondo from "../media/fondo.jpg";
 import { Link } from "react-router-dom";
-import React, {Fragment, useState} from 'react';
+import React, { Fragment, useState } from "react";
 
-let nombre="";
-let precio="";
+const Productos = () => {
 
-function Productos() {
+  const [datos, setDatos] = useState({
+    descripcion: "",
+    precio: ""
+  });
+
+  const [datosFinal, setDatosFinal] = useState({
+    descripcionFinal: "",
+    precioFinal: ""
+  });
+
+
+  const handleInputChange = (event) => {
+    // console.log(event.target.name)
+    // console.log(event.target.value)
+    setDatos({
+      ...datos,
+      [event.target.name]: event.target.value,
+    });
+  };
+
+  const enviarDatos = (event) => {
+    event.preventDefault();
+    console.log("enviando datos..." + datos.descripcion + " " + datos.precio);
+
+    setDatosFinal({
+    descripcionFinal: datos.descripcion,
+    precioFinal: datos.precio
+    });
+  };
+
+
   return (
-    <div>
+    <Fragment>
       <div id="fondologin">
         <img src={fondo} alt="fondo pagina" className="imgfondo" />
       </div>
       <div id="formulario">
-        <form action="action_page.php" method="post" action="/productos">
+        <form onSubmit={enviarDatos}>
           <div className="imgcontainer">
             <h1>Agregar Nuevo Producto</h1>
           </div>
@@ -25,27 +54,26 @@ function Productos() {
             <input
               type="text"
               placeholder="Ingresa la descripción"
-              name="descripcion_producto"
-              id= "dp"
-              required
-            />
-
+              className="form-control"
+              onChange={handleInputChange}
+              name="descripcion"
+            ></input>
             <label for="precio">
               <b>Precio Unitario del Producto</b>
             </label>
             <input
               type="text"
               placeholder="Ingresa el precio"
-              name="precio_producto"
-              id="pp"
-              required
-            />
+              className="form-control"
+              onChange={handleInputChange}
+              name="precio"
+            ></input>
 
             <button type="submit" id="logearse">
               Agregar Producto
             </button>
           </div>
-          
+
           <div className="container" className="abajo">
             <Link to="/administrador">
               <button type="button" className="cancelbtn">
@@ -53,41 +81,31 @@ function Productos() {
               </button>
             </Link>
           </div>
-          <div className="container">
-            <table className="table">
-              <caption>
-                <h1>Producto Agregado</h1>
-              </caption>
-              <thead>
-                <tr>
-                  <th scope="col">ID</th>
-                  <th scope="col">DESCRIPCIÓN</th>
-                  <th scope="col">PRECIO</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>producto 1</td>
-                  <td>10000</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
         </form>
+        <div className="container">
+          <table className="table">
+            <caption>
+              <h1>Producto Agregado</h1>
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">DESCRIPCIÓN</th>
+                <th scope="col">PRECIO</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>{datosFinal.descripcionFinal}</td>
+                <td>{datosFinal.precioFinal}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
-    </div>
+    </Fragment>
   );
-}
-
-function agregar(){
-    let dp=document.getElementById("dp").ariaValueMax;
-    let pp=document.getElementById("pp").ariaValueMax;
-    console.log(dp);
-    console.log(pp);
-}
-
-
-
+};
 
 export default Productos;
