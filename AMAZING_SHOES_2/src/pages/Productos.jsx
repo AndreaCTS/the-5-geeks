@@ -1,6 +1,7 @@
 import "../App.css";
 import fondo from "../media/fondo.jpg";
 import { Link } from "react-router-dom";
+import React, {Fragment, useState} from 'react';
 
 let nombre="";
 let precio="";
