@@ -1,7 +1,5 @@
 import "../App.css";
 import logo from "../media/logo_trans2.png";
-import fondo from "../media/fondo.jpg";
-import Logging from "../components/Logging.jsx";
 import logo2 from "../media/logo_tienda.png";
 import { Link } from "react-router-dom";
 
@@ -26,10 +24,10 @@ function Administrador() {
         </nav>
       </header>
 
-      <main>
+      <main className="main_fondo">
 
-        <div className="contenedor_contenido">
-          <div class="lateral">
+        <div>
+          <div className="lateral">
             <h2>Menú Administrador</h2>
             <ul>
               <li>
@@ -70,9 +68,6 @@ function Administrador() {
           </div>
         </div>
 
-        {/* <div>
-          <img src={fondo} alt="fondo pagina" className="imgfondo" />
-        </div> */}
 
       </main>
 
