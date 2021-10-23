@@ -10,7 +10,7 @@ function Index() {
     <div>
       <header>
         <img src={logo} alt="Logotipo" className="logo_nav" />
-        <nav className="container">
+        <nav>
           <ul>
             <li>
             <Link to="login">Contacto</Link>

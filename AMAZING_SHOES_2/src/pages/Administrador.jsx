@@ -8,7 +8,7 @@ function Administrador() {
     <div>
       <header>
         <img src={logo} alt="Logotipo" className="logo_nav" />
-        <nav className="container">
+        <nav>
           <ul>
             <li>
               <Link to="login">Contacto</Link>
@@ -26,7 +26,8 @@ function Administrador() {
 
       <main className="main_fondo">
 
-        <div>
+        
+
           <div className="lateral">
             <h2>Menú Administrador</h2>
             <ul>
@@ -66,7 +67,8 @@ function Administrador() {
           <div className="section">
             <div >Area para tablas</div>
           </div>
-        </div>
+
+       
 
 
       </main>

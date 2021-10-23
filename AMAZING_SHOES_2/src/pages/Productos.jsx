@@ -4,17 +4,15 @@ import { Link } from "react-router-dom";
 import React, { Fragment, useState } from "react";
 
 const Productos = () => {
-
   const [datos, setDatos] = useState({
     descripcion: "",
-    precio: ""
+    precio: "",
   });
 
   const [datosFinal, setDatosFinal] = useState({
     descripcionFinal: "",
-    precioFinal: ""
+    precioFinal: "",
   });
-
 
   const handleInputChange = (event) => {
     // console.log(event.target.name)
@@ -30,58 +28,56 @@ const Productos = () => {
     console.log("enviando datos..." + datos.descripcion + " " + datos.precio);
 
     setDatosFinal({
-    descripcionFinal: datos.descripcion,
-    precioFinal: datos.precio
+      descripcionFinal: datos.descripcion,
+      precioFinal: datos.precio,
     });
   };
 
-
   return (
     <Fragment>
-      <div id="fondologin">
-        <img src={fondo} alt="fondo pagina" className="imgfondo" />
-      </div>
-      <div id="formulario">
-        <form onSubmit={enviarDatos}>
-          <div className="imgcontainer">
-            <h1>Agregar Nuevo Producto</h1>
-          </div>
+      <div className="fondologin">
+        <div className="formulario">
+          <form onSubmit={enviarDatos}>
+            <div className="imgcontainer">
+              <h1>Agregar Nuevo Producto</h1>
+            </div>
 
-          <div className="container">
-            <label for="descripcion">
-              <b>Descripción del Producto</b>
-            </label>
-            <input
-              type="text"
-              placeholder="Ingresa la descripción"
-              className="form-control"
-              onChange={handleInputChange}
-              name="descripcion"
-            ></input>
-            <label for="precio">
-              <b>Precio Unitario del Producto</b>
-            </label>
-            <input
-              type="text"
-              placeholder="Ingresa el precio"
-              className="form-control"
-              onChange={handleInputChange}
-              name="precio"
-            ></input>
+            <div className="container">
+              <label for="descripcion">
+                <b>Descripción del Producto</b>
+              </label>
+              <input
+                type="text"
+                placeholder="Ingresa la descripción"
+                className="form-control"
+                onChange={handleInputChange}
+                name="descripcion"
+              ></input>
+              <label for="precio">
+                <b>Precio Unitario del Producto</b>
+              </label>
+              <input
+                type="text"
+                placeholder="Ingresa el precio"
+                className="form-control"
+                onChange={handleInputChange}
+                name="precio"
+              ></input>
 
-            <button type="submit" id="logearse">
-              Agregar Producto
-            </button>
-          </div>
-
-          <div className="container" className="abajo">
-            <Link to="/administrador">
-              <button type="button" className="cancelbtn">
-                Regresar
+              <button type="submit" id="logearse">
+                Agregar Producto
               </button>
-            </Link>
-          </div>
-        </form>
+            </div>
+
+            <div className="container" className="abajo">
+              <Link to="/administrador">
+                <button type="button" className="cancelbtn">
+                  Regresar
+                </button>
+              </Link>
+            </div>
+          </form>
+        </div>
         <div className="container">
           <table className="table">
             <caption>
@@ -104,6 +100,11 @@ const Productos = () => {
           </table>
         </div>
       </div>
+      <footer className="piedepagina">
+        <div>
+          Todos los derechos reservados | Misión-Tic 2022 | THE-FIVE-GEEKS
+        </div>
+      </footer>
     </Fragment>
   );
 };
