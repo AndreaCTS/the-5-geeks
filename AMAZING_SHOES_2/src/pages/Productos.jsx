@@ -92,7 +92,7 @@ const Productos = () => {
             </thead>
             <tbody>
               <tr>
-                <td>1</td>
+                <td>#</td>
                 <td>{datosFinal.descripcionFinal}</td>
                 <td>{datosFinal.precioFinal}</td>
               </tr>

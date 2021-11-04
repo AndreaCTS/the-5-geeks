@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 function Index() {
   return (
-    <div>
+    <div className="fondologin">
       <header>
         <img src={logo} alt="Logotipo" className="logo_nav" />
         <nav>
